@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+    <h1>Calculator</h1>
+    <div class="calculator">
+      <input type="text" id="result" disabled class="text">
+      <table>
+        <tr>
+          <td><button onclick="clearResult()" class="cencle">C</button></td>
+          <td><button onclick="backspace()" class="btn">←</button></td>
+          <td><button onclick="operate('%')" class="btn">%</button></td>
+          <td><button onclick="operate('/')" class="btn">/</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="append('7')" class="num">7</button></td>
+          <td><button onclick="append('8')" class="num">8</button></td>
+          <td><button onclick="append('9')" class="num">9</button></td>
+          <td><button onclick="operate('*')" class="btn">*</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="append('4')" class="num">4</button></td>
+          <td><button onclick="append('5')" class="num">5</button></td>
+          <td><button onclick="append('6')" class="num">6</button></td>
+          <td><button onclick="operate('-')" class="btn">-</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="append('1')" class="num">1</button></td>
+          <td><button onclick="append('2')" class="num">2</button></td>
+          <td><button onclick="append('3')" class="num">3</button></td>
+          <td><button onclick="operate('+')" class="btn">+</button></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><button onclick="append('0')" class="num">0</button></td>
+          <td><button onclick="append('.')" class="btn">.</button></td>
+          <td><button onclick="calculate()" class="equals">=</button></td>
+        </tr>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
